@@ -1144,10 +1144,11 @@ footer {
     
     .logo-image {
         max-height: 30px;
+        width: 270px; /* Increased to 1.5x the original width (180px × 1.5 = 270px) */
     }
     
     nav {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0.5rem; /* Reduced horizontal padding to accommodate larger logo */
     }
 }
 
