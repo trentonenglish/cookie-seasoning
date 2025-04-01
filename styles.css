@@ -184,6 +184,17 @@ nav {
     transform: translateY(-2px);
 }
 
+/* Menu link styling */
+.menu-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-link:hover {
+    cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -995,7 +1006,7 @@ footer {
 
 @media (max-width: 768px) {
     .hero-image-container {
-        height: 60vh; /* Adjusted for better mobile proportions */
+        height: 50vh; /* Reduced from 60vh for better mobile proportions */
     }
     
     .hero-title {
@@ -1093,7 +1104,7 @@ footer {
 
 @media (max-width: 480px) {
     .hero-image-container {
-        height: 70vh; /* Taller on very small screens for better content visibility */
+        height: 55vh; /* Reduced from 70vh for smaller screens */
     }
     
     .hero-title {
@@ -1142,7 +1153,7 @@ footer {
 
 @media (max-height: 600px) {
     .hero-image-container {
-        height: 80vh; /* Adjusted for short height screens */
+        height: 70vh; /* Adjusted for short height screens */
     }
     
     .mobile-scroll-indicator {
