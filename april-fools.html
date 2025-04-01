@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APRIL FOOLS! | Crave Seasoning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .april-fools-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: var(--black);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .april-fools-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/D43B960A-BE53-4F38-AFE5-DD370BD957CE.png') center center/cover;
+            opacity: 0.2;
+            z-index: 1;
+        }
+        
+        .april-fools-content {
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+        }
+        
+        .april-fools-title {
+            font-size: 6rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            font-weight: 800;
+            letter-spacing: 10px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            animation: textGlow 2s infinite alternate;
+        }
+        
+        .april-fools-subtitle {
+            font-size: 2rem;
+            color: var(--white);
+            margin-bottom: 3rem;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--black);
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 2px;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            text-decoration: none;
+        }
+        
+        .back-button:hover {
+            background-color: var(--dark-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 10px rgba(201, 166, 86, 0.5), 0 0 20px rgba(201, 166, 86, 0.3);
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(201, 166, 86, 0.8), 0 0 30px rgba(201, 166, 86, 0.5), 0 0 40px rgba(201, 166, 86, 0.3);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .april-fools-title {
+                font-size: 4rem;
+                letter-spacing: 5px;
+            }
+            
+            .april-fools-subtitle {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .april-fools-title {
+                font-size: 3rem;
+                letter-spacing: 3px;
+            }
+            
+            .april-fools-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="announcement-bar">
+        <p>CRAVING SOMETHING SWEET?</p>
+    </div>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <button class="menu-toggle">
+                    <span class="hamburger-icon"></span>
+                </button>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Horizontal Color Logo.png" alt="CRAVE" class="logo-image">
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html" class="account-link">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="index.html" class="cart-link">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="april-fools-container">
+        <div class="april-fools-content">
+            <h1 class="april-fools-title">APRIL FOOLS!</h1>
+            <p class="april-fools-subtitle">Cookie seasoning for steak? That's just crazy enough to work...</p>
+            <a href="index.html" class="back-button">BACK TO REALITY</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
